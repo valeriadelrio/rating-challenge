@@ -1,0 +1,14 @@
+<div class="container-star">
+  <div
+    *ngFor="let i of rates"
+    class="star"
+    id="{{ i }}"
+    (click)="checkPrevious(i)"
+    [ngClass]="{ selected: i <= rate, readonly: readonly }"
+  >
+    <mat-icon class="star-icon" aria-label="star icon">star</mat-icon>
+  </div>
+</div>
+<div *ngIf="message"class="message">
+  {{message}}
+</div>

@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StarRateComponent } from './components/star-rate/star-rate.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StarRateModule } from './components/star-rate/star-rate.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    StarRateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

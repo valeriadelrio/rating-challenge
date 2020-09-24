@@ -1,0 +1,22 @@
+.container-star {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  .star {
+    .star-icon {
+      color: red;
+      font-size: 40px;
+      margin-right: 12px;
+    }
+    svg {
+      fill: red;
+    }
+  }
+  .star.selected,
+  .star:not(.readonly):hover {
+    .star-icon {
+      color: yellow;
+      cursor: pointer;
+    }
+  }
+}
